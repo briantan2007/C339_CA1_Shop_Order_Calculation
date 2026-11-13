@@ -20,7 +20,7 @@ def test_calculate_total_valid(unit_price_cents,quantity, expected):
         (10.3,5) , # Invalid type (Float price)
         ("3",2), # Invalid type (String price)
         (False, 2), # Invalid type (Boolean)
-        ("10", 3 ), # Invalid type (String)
+        ("10",  3 ), # Invalid type (String)
 
     ]
 
