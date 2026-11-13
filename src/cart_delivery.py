@@ -6,4 +6,4 @@ def qualifies_free_delivery(total_cents):
     if total_cents < 0:
         raise ValueError("total must be nonnegative")
     
-    return total_cents > 5000
+    return total_cents >= 5000
