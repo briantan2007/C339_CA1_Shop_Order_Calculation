@@ -16,7 +16,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install pytest
-        run: pip Install pytest
+        run: pip install pytest
 
       - name: Run pytest
         run: python -m pytest --cov-report=term-missing
