@@ -1,6 +1,21 @@
 name: CA1 Automated Pytest CI
 
-on: push 
+on: 
+  push:
+    branches: ["main"]
+    paths:
+    - 'src/**'
+    - 'test/**'
+    - '.github/workflows/pytest.yml'
+
+    pull_request:
+      branches: ["main"]
+      paths:
+      - 'src/**'
+      - 'test/**'
+      - 'requirements.txt'
+      - '.github/workflows/pytest.yml'
+
 
 jobs: 
   test:
