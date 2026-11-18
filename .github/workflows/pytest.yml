@@ -15,7 +15,6 @@ on:
       - 'test/**'
       - '.github/workflows/pytest.yml'
 
-
 jobs: 
   test:
     runs-on: ubuntu-latest
